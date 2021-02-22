@@ -1,7 +1,16 @@
+/*
+ * @Author: your name
+ * @Date: 2021-01-11 14:04:15
+ * @LastEditTime: 2021-01-26 20:25:17
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \F4DT最简版\USER\INC\led.h
+ */
 #ifndef _LED_H
 #define _LED_H
 
 #include "sys.h"
+#include "delay.h"
 #include "includes.h"
 
 #define LED_RED_OFF  			GPIOA->BSRRL = PIN4
@@ -21,5 +30,7 @@
 
 void LED_Configuration(void);
 void Led_Show(void);
+void LED_OFF(void);
+void LED_ON(void);
 
 #endif

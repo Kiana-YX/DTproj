@@ -1,0 +1,4 @@
+ID_SELF：主控ID号
+BBG 定时发送数据,rx_message.Data[4]中调整发送数据时间间隔（注意为偶数），应该是rx_message.Data[4]ms，即rx_message.Data[4]=2时，2ms发送一次数据
+
+注意：程序中SPI1对应DT35Coe_1，注意还要在Linear_Fitting中修改DT35Coe_1.k1还是DT35Coe_1.k2（先选DT序号，再选长底板/短底板）

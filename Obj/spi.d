@@ -1,0 +1,15 @@
+.\obj\spi.o: USER\SRC\SPI.c
+.\obj\spi.o: .\USER\INC\SPI.h
+.\obj\spi.o: .\GeneralFunction\inc\sys.h
+.\obj\spi.o: .\Libraries\CMSIS\stm32f4xx.h
+.\obj\spi.o: D:\Keil531\Keil2\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h
+.\obj\spi.o: D:\Keil531\Keil1\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\spi.o: D:\Keil531\Keil2\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\obj\spi.o: D:\Keil531\Keil2\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\obj\spi.o: D:\Keil531\Keil2\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\obj\spi.o: D:\Keil531\Keil2\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h
+.\obj\spi.o: .\Libraries\CMSIS\system_stm32f4xx.h
+.\obj\spi.o: .\USER\INC\stm32f4xx_conf.h
+.\obj\spi.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
+.\obj\spi.o: .\Libraries\CMSIS\stm32f4xx.h
+.\obj\spi.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h

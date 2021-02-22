@@ -1,0 +1,16 @@
+1. void TIM3_IRQHandler(void) 【tim3.c】
+从SPI中读取50个数据保存至kalman_data1.data[]	//据说这个很快的
+
+2. double getAveragingData(Kalman_DataTypeDef* kalman)【kalman.c】
+将50个数据经平均值滤波得到的一个值存入distance1.kalmaninput
+
+3. double kalman_filter(Kalman_Filter *kalman,double input)【kalman.c】
+将刚得到的平均值作为卡尔曼滤波的输入，进行滤波处理，得到distance1.temp
+[注意这儿滤波参数是用地址引用的，即每一次处理滤波参数都会更新]
+
+4. calib.posData[calib.posCnt][i]=distance1.temp;【main.c】
+将100个数据保存至二维数组
+
+5. usart.TxBuffer_USART1[2*i]=(calib.posData[sendPosCnt][i]>>8)&0xff;【main.c】
+将数据转存至新的数组，等待DMA使能发送
+(注意DMA配置的是MYDMA_Config(DMA2_Stream7,4,(u32)&USART1->DR,(u32)usart.TxBuffer_USART1,USART1_Tx_BufferSize);即从缓冲数组发送到串口相关地址)
