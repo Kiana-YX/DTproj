@@ -64,12 +64,16 @@ void SPI2_Configuration(void)
  */
 static u16 SPI_ReadWriteByte(SPI_TypeDef *SPIx, u16 TxData)
 {
-  while ((SPIx->SR & 1 << 1) == 0)
+	while ((SPIx->SR & 1 << 1) == 0)
     ;                //等待发送区空
   SPIx->DR = TxData; //发送一个半字
   while ((SPIx->SR & 1 << 0) == 0)
-    ;              //等待接收完成
+		;             //等待接收完成
   return SPIx->DR; //返回收到的数据
+//	while(SPI_I2S_GetFlagStatus(SPIx,SPI_I2S_FLAG_TXE)==RESET){};//发送寄存器为空
+//    SPI_I2S_SendData(SPIx,TxData);
+//    while(SPI_I2S_GetFlagStatus(SPIx,SPI_I2S_FLAG_RXNE)==RESET){};//接受寄存器为空
+//    return SPI_I2S_ReceiveData(SPIx);
 }
 
 /*SPI1对应AD读取*/

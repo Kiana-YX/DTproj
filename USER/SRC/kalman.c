@@ -61,6 +61,7 @@ double kalman_filter(Kalman_Filter *kalman, double input)
 	return kalman->best;
 }
 
+float filter_test;
 /****对数据进行线性拟合****/
 short Linear_Fitting(SPI_TypeDef *SPIx) //SPI1为1号DT35，SPI2为2号DT35
 {
@@ -130,8 +131,14 @@ short Linear_Fitting(SPI_TypeDef *SPIx) //SPI1为1号DT35，SPI2为2号DT35
 	{
 		distance2.kalmaninput = getAveragingData(&kalman_data2);
 		distance2.temp = kalman_filter(&kalman_fliter2, distance2.kalmaninput);
+//		{
+//			my_IIR.distance[1]=distance2.kalmaninput;//本次测量值
+//			my_IIR.distance[2]=(1-my_IIR.a)*my_IIR.distance[0]+my_IIR.a*my_IIR.distance[1];
+//			my_IIR.distance[0]=my_IIR.distance[2];//准备作为下一次的"上一值"
+//		}
 		distance2.real = 0.7058208778 * distance2.temp - 7205.7917274784;
-		distance.send = (u16)(distance2.real + 0.5);
+	
+		//distance.send = (u16)(distance2.real + 0.5);
 	}
 	return 0;
 #endif

@@ -9,6 +9,7 @@
 #include "usart1.h"
 #include "visual_scope.h"
 
+
 //STARTÈÎÎñ
 #define START_TASK_PRIO            5
 #define START_TASK_STK_SIZE        256

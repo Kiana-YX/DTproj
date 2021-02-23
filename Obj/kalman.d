@@ -14,8 +14,10 @@
 .\obj\kalman.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\obj\kalman.o: .\Libraries\CMSIS\stm32f4xx.h
 .\obj\kalman.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\obj\kalman.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h
 .\obj\kalman.o: .\USER\INC\param.h
 .\obj\kalman.o: .\USER\INC\kalman.h
+.\obj\kalman.o: .\USER\INC\filter.h
 .\obj\kalman.o: D:\Keil531\Keil1\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\kalman.o: .\GeneralFunction\inc\visual_scope.h
 .\obj\kalman.o: .\USER\INC\usart1.h

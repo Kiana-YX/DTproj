@@ -17,6 +17,7 @@
 .\obj\timer.o: .\USER\INC\param.h
 .\obj\timer.o: .\USER\INC\kalman.h
 .\obj\timer.o: .\USER\INC\SPI.h
+.\obj\timer.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h
 .\obj\timer.o: .\USER\INC\param.h
 .\obj\timer.o: .\GeneralFunction\inc\visual_scope.h
 .\obj\timer.o: .\USER\INC\usart1.h
@@ -32,6 +33,7 @@
 .\obj\timer.o: .\uCOSII\CORE\ucos_ii.h
 .\obj\timer.o: .\uCOSII\CONFIG\os_cfg.h
 .\obj\timer.o: .\uCOSII\PORT\os_cpu.h
+.\obj\timer.o: .\USER\INC\filter.h
 .\obj\timer.o: D:\Keil531\Keil1\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\timer.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h
 .\obj\timer.o: .\USER\INC\led.h

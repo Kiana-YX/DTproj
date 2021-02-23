@@ -13,6 +13,7 @@ TransimitTypeDef DT_transmit;
 void paramInit(void)
 {
 	Kalman_Init();
+	IIR_init(&my_IIR);
 	
   {//DT标志位初始化
   DT_transmit.mode = 1;

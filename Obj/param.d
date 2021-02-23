@@ -15,6 +15,7 @@
 .\obj\param.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\obj\param.o: .\Libraries\CMSIS\stm32f4xx.h
 .\obj\param.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\obj\param.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h
 .\obj\param.o: .\USER\INC\param.h
 .\obj\param.o: .\GeneralFunction\inc\visual_scope.h
 .\obj\param.o: .\USER\INC\usart1.h
@@ -30,4 +31,5 @@
 .\obj\param.o: .\uCOSII\CORE\ucos_ii.h
 .\obj\param.o: .\uCOSII\CONFIG\os_cfg.h
 .\obj\param.o: .\uCOSII\PORT\os_cpu.h
+.\obj\param.o: .\USER\INC\filter.h
 .\obj\param.o: D:\Keil531\Keil1\ARM\ARMCC\Bin\..\include\stdbool.h

@@ -9,6 +9,7 @@
 ".\obj\timer.o"
 ".\obj\main.o"
 ".\obj\usart1.o"
+".\obj\filter.o"
 ".\obj\mydataprocess.o"
 ".\obj\sys.o"
 ".\obj\dma.o"
